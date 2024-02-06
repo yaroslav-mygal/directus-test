@@ -1,0 +1,18 @@
+{% layout "base-admin-email" %}
+{% block content %}
+  {% if greetings!='undefined' %}<p><strong>Anrede</strong> - {{ greetings }}</p>{% endif %}
+  {% if firstName!='undefined' %}<p><strong>Vorname</strong> - {{ firstName }}</p>{% endif %}
+  {% if lastName!='undefined' %}<p><strong>Nachname</strong> - {{ lastName }}</p>{% endif %}
+  {% if country!='undefined' %}<p><strong>Land</strong> - {{ country }}</p>{% endif %}
+  {% if postalCode!='undefined' %}<p><strong>Postleitzahl</strong> - {{ postalCode }}</p>{% endif %}
+  {% if city!='undefined' %}<p><strong>Ort</strong> - {{ city }}</p>{% endif %}
+  {% if street!='undefined' %}<p><strong>Strasse</strong> - {{ street }}</p>{% endif %}
+  {% if houseNumber!='undefined' %}<p><strong>Hausnummer</strong> - {{ houseNumber }}</p>{% endif %}
+  {% if birthday!='undefined' %}<p><strong>Geburtsdatum</strong> - {{ birthday }}</p>{% endif %}
+  {% if birthName!='undefined' %}<p><strong>Geburtsname / Früherer Name (Optional)</strong> - {{ birthName }}</p>{% endif %}
+  {% if email!='undefined' %}<p><strong>E-Mail Adresse</strong> - {{ email }}</p>{% endif %}
+  {% if fileNumber!='undefined' %}<p><strong>Aktenzeichen (Optional)</strong> - {{ fileNumber }}</p>{% endif %}
+  {% if previousAddress!='undefined' %}<p><strong>Frühere Adresse (Optional)</strong> - {{ previousAddress }}</p>{% endif %}
+
+  {% if date_created %}<p><strong>Date Created</strong> - {{ date_created | date: '%Y-%m-%d %H:%M:%S' }}</p>{% endif %}
+{% endblock %}
