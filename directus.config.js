@@ -35,6 +35,7 @@ module.exports = function (env) {
     STORAGE_S3_ENDPOINT: env.STORAGE_S3_ENDPOINT,
 
     // Mail Service
+    EMAIL_FROM: env.EMAIL_FROM,
     EMAIL_TRANSPORT: env.EMAIL_TRANSPORT,
     EMAIL_SENDGRID_API_KEY: env.EMAIL_SENDGRID_API_KEY,
 
