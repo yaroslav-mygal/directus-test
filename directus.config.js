@@ -38,7 +38,6 @@ module.exports = function (env) {
     EMAIL_FROM: env.EMAIL_FROM,
     EMAIL_TRANSPORT: env.EMAIL_TRANSPORT,
     
-
     EMAIL_TEMPLATES_PATH: env.EMAIL_TEMPLATES_PATH,
 
     // Sendgrid
